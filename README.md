@@ -7,9 +7,9 @@
 ## ラベリングジョブについて
 ### 必要なコンポーネント
 SageMaker Ground Truth のカスタムテンプレートを使用して Semantic Segmentation を行う場合に必要なコンポーネントは下記。
-- HTML テンプレート [segmentation.liquid.html](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/labelingjob/segmentation.liquid.html)
-- プレラベリング Lambda 関数 [pretask.py](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/labelingjob/pretask.py)
-- ポストラベリング Lambda 関数 [posttask.py](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/labelingjob/posttask.py)
+- HTML テンプレート [segmentation.liquid.html](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/blob/master/labelingjob/segmentation.liquid.html)
+- プレラベリング Lambda 関数 [pretask.py](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/blob/master/labelingjob/pretask.py)
+- ポストラベリング Lambda 関数 [posttask.py](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/blob/master/labelingjob/posttask.py)
 - IAM ロール
     - SageMaker ラベリングジョブ用のロール: `AWSLambdaFullAccess` と `AmazonSageMakerFullAccess` を付与
     - プレラベリング Lambda 関数用のロール: `AWSLambdaBasicExecutionRole` と、 `AmazonS3ReadOnlyAccess`
@@ -27,9 +27,9 @@ SageMaker Ground Truth のカスタムテンプレートを使用して Semantic
 ## 検品ジョブについて
 ### 必要なコンポーネント
 SageMaker Ground Truth のカスタムテンプレートを使用してアノテーション済画像へコメントを行う場合に必要なコンポーネントは下記。
-- HTML テンプレート [audit.liquid.html](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/auditjob/segmentation.liquid.html)
-- プレラベリング Lambda 関数 [pretask.py](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/auditjob/pretask.py)
-- ポストラベリング Lambda 関数 [posttask.py](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/auditingjob/posttask.py)
+- HTML テンプレート [audit.liquid.html](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/blob/master/auditjob/segmentation.liquid.html)
+- プレラベリング Lambda 関数 [pretask.py](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/blob/master/auditjob/pretask.py)
+- ポストラベリング Lambda 関数 [posttask.py](https://github.com/tkazusa/sagemaker-ground-truth-custom-audit/blob/master/auditingjob/posttask.py)
 - IAM ロール
     - SageMaker ラベリングジョブ用のロール: `AWSLambdaFullAccess` と `AmazonSageMakerFullAccess` を付与
     - プレラベリング Lambda 関数用のロール: `AWSLambdaBasicExecutionRole` と、 `AmazonS3ReadOnlyAccess`
