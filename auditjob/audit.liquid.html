@@ -1,0 +1,23 @@
+<!--
+SageMaker GT 専用向けの機能を HTML や CSS、及び JavaScript として実装し、HTML タグとして抽象化した、crowd HTML 要素を読み込んでいる。
+詳細は開発者ガイドを参照: https://docs.aws.amazon.com/ja_jp/sagemaker/latest/dg/sms-ui-template-reference.html
+-->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form>
+    <crowd-bounding-box
+      name="Audit"
+      src="{{ task.input.taskObject | grant_read_access }}"
+      header="検品して下さい"
+      labels="['OK','NG']"
+    >
+    </crowd-bounding-box>
+
+    <!--
+    検品用のテキストエリアには crowd-text-area を使用。
+    https://docs.aws.amazon.com/ja_jp/sagemaker/latest/dg/sms-ui-template-crowd-text-area.html
+    -->
+    <crowd-text-area
+        name="Audit Text Area">
+    </crowd-text-area>
+  </crowd-form>

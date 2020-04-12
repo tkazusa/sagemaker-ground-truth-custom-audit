@@ -1,0 +1,16 @@
+<!--
+SageMaker GT 専用向けの機能を HTML や CSS、及び JavaScript として実装し、HTML タグとして抽象化した、crowd HTML 要素を読み込んでいる。
+詳細は開発者ガイドを参照: https://docs.aws.amazon.com/ja_jp/sagemaker/latest/dg/sms-ui-template-reference.html
+-->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+
+<crowd-form>
+  <crowd-semantic-segmentation
+    name="annotatedResult"
+    src="{{ task.input.taskObject | grant_read_access }}"
+    header="対象の物体を塗りつぶして下さい。"
+    labels="['Cat', 'Dog', 'Bird']"
+  >
+  </crowd-instance-segmentation>
+</crowd-form>

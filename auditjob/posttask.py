@@ -1,6 +1,7 @@
 
 import json
 import sys
+import boto3
 
 def lambda_handler(event: dict, context: object) -> dict:
     """ カスタムラベリングのためのポストタスク Lambda 関数
