@@ -47,3 +47,4 @@ SageMaker Ground Truth のカスタムテンプレートを使用してアノテ
 ## TODOs
 - 検品ジョブにおいて、UI へ出力する画像として、元画像とアノテーション後画像を透過してマージ 
 - 検品ジョブを ラベリングジョブが終わったタイミングで AWS CloudWatch Events をトリガーに AWS Lambda を発火し、Lambda から `CreateLabelingJob` を行う。 
+- ワーカーの稼働時間をトラックし、どのようにトレサビDBへ記録するかの詳細検討
