@@ -48,3 +48,8 @@ SageMaker Ground Truth のカスタムテンプレートを使用してアノテ
 - 検品ジョブにおいて、UI へ出力する画像として、元画像とアノテーション後画像を透過してマージ 
 - 検品ジョブを ラベリングジョブが終わったタイミングで AWS CloudWatch Events をトリガーに AWS Lambda を発火し、Lambda から `CreateLabelingJob` を行う。 
 - ワーカーの稼働時間をトラックし、どのようにトレサビDBへ記録するかの詳細検討
+
+
+## 参考情報
+- [Identifying worker labeling efficiency using Amazon SageMaker Ground Truth](https://aws.amazon.com/jp/blogs/machine-learning/identifying-worker-labeling-efficiency-using-amazon-sagemaker-ground-truth/)
+- [Identify Worker Labeling Efficiency using SageMaker GroundTruth notebook](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/ground_truth_labeling_jobs/worker_labeling_efficiency/Identify%20Worker%20Accuracy.ipynb)
