@@ -55,4 +55,4 @@ SageMaker Ground Truth のカスタムテンプレートを使用してアノテ
 - [Identifying worker labeling efficiency using Amazon SageMaker Ground Truth](https://aws.amazon.com/jp/blogs/machine-learning/identifying-worker-labeling-efficiency-using-amazon-sagemaker-ground-truth/)
 - [Identify Worker Labeling Efficiency using SageMaker GroundTruth notebook](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/ground_truth_labeling_jobs/worker_labeling_efficiency/Identify%20Worker%20Accuracy.ipynb)
 - [Creating custom labeling jobs with AWS Lambda and SageMaker Ground Truth](https://aws.amazon.com/jp/blogs/machine-learning/creating-custom-labeling-jobs-with-aws-lambda-and-amazon-sagemaker-ground-truth/)
-- [Tracking the throughput of your private labeling team through Amazon SageMaker Ground Truth](https://king-the-throughput-of-your-private-labeling-team-through-amazon-sagemaker-ground-truth/)
+- [Tracking the throughput of your private labeling team through Amazon SageMaker Ground Truth](https://aws.amazon.com/jp/blogs/machine-learning/tracking-the-throughput-of-your-private-labeling-team-through-amazon-sagemaker-ground-truth/)
